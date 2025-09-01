@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    section {
+      margin: 40px 0;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎨 HTML Multimedia Showcase</h1>
+
+  <!-- Section 1: YouTube Video -->
+  <section>
+    <h2>🎬 Embedded YouTube Video</h2>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- Section 2: Canvas -->
+  <section>
+    <h2>🖌️ Canvas Drawing</h2>
+    <canvas id="myCanvas" width="400" height="200" style="border:1px solid black;">
+      Your browser does not support the HTML canvas tag.
+    </canvas>
+    <script>
+      let c = document.getElementById("myCanvas");
+      let ctx = c.getContext("2d");
+
+      // Rectangle
+      ctx.fillStyle = "lightblue";
+      ctx.fillRect(20, 20, 150, 100);
+
+      // Circle
+      ctx.beginPath();
+      ctx.arc(280, 100, 50, 0, 2 * Math.PI);
+      ctx.fillStyle = "orange";
+      ctx.fill();
+      ctx.stroke();
+    </script>
+  </section>
+
+  <!-- Section 3: SVG -->
+  <section>
+    <h2>🔺 SVG Shapes</h2>
+    <svg width="400" height="200" style="border:1px solid black;">
+      <!-- Rectangle -->
+      <rect x="20" y="20" width="120" height="60" fill="lightgreen" stroke="black" />
+
+      <!-- Circle -->
+      <circle cx="250" cy="60" r="40" fill="skyblue" stroke="black" />
+
+      <!-- Line -->
+      <line x1="20" y1="150" x2="350" y2="150" stroke="red" stroke-width="3" />
+    </svg>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Multimedia Project | Made with HTML ❤️</p>
+  </footer>
+
+</body>
+</html>
