@@ -62,3 +62,4 @@
 
 // Q : if we want to delay for 10 minutes wait for 10 minutes  ,what to do in synchronous function.
 // in async function we can use setTimeout() function to delay for 10 minutes.
+// --------------------------------------

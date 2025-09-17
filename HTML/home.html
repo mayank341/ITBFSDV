@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Two Column Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .header {
+      
+      background: rgb(209, 209, 19);
+      color: white
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav {
+      background: #333;
+    }
+    .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .nav ul li {
+      flex: 1;
+    }
+    .nav ul li a {
+      display: block;
+      padding: 12px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+    .nav ul li a:hover {
+      background: #575757;
+    }
+
+    .menu {
+      display: flex;
+      min-height: 400px;
+    }
+    .left {
+      width: 40%;
+      background: lightblue;
+      padding: 20px;
+    }
+    .right {
+      width: 60%;
+      background: lightgreen;
+      padding: 20px;
+    }
+    .rightframe{
+        width:100%;
+        height:100%;
+
+    }
+
+    .footer {
+      background: teal;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">ABESEC GHAZIABAD</div>
+
+ <div class="nav">
+    <ul>
+      <li><a href="aboutus.html" target="rightFrame">About Us</a></li>
+      <li><a href="register.html" target="rightFrame">Register</a></li>
+      <li><a href="login.html" target="rightFrame">Login</a></li>
+      <li><a href="changepassword.html" target="rightFrame">Change Password</a></li>
+      <li><a href="profile.html" target="rightFrame">Profile</a></li>
+      <li><a href="contactus.html" target="rightFrame">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class="menu">
+    <div class="left">
+      Left Secttion <br>
+    </div>
+    <div class="right">
+      <iframe name="rightFrame"></iframe>
+    </div>
+  </div>
+  <div class="footer">&copy; ABESEC GHAZIABAD</div>
+</body>
+</html>
